@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <title>Project 3</title>
+  
+  
+  <link rel="stylesheet" href="https://d10ajoocuyu32n.cloudfront.net/mobile/1.3.1/jquery.mobile-1.3.1.min.css">
+  <link rel = "stylesheet"
+              type = "text/css"
+              href = "formatMobile.css"/>
+  
+  <script src="jquery.js"></script>
+  <script src="jquery.mobile.js"></script>
+   
+  <script type = "text/javascript">
+ 
+  function editor(){
+    alert("Editor:\nMatthias Maier\nFall Semester 2013\nIUPUI");
+  } 
+     
+  </script>
+</head>
+
+<body>
+<div data-role="page" data-theme="b" id="page1">
+    <div data-theme="a" data-role="header">
+        <a data-role="button" href="#page1" data-icon="arrow-l" data-iconpos="left"
+        class="ui-btn-left">
+            Home
+        </a>
+        <h3>
+            1. Bundesliga
+        </h3>
+    </div>
+    <div data-role="content">
+        <div data-role="collapsible-set">
+            <div data-role="collapsible">
+                <h3>
+                    Teams
+                </h3>
+                <ul data-role="listview" data-divider-theme="b" data-inset="true">
+                    <li data-theme="c">
+                        <a href="#" data-transition="slide">
+                            Button
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div data-role="collapsible">
+                <h3>
+                    Current Table
+                </h3>
+                <a data-role="button" href="#page1">
+                    Official Homepage
+                </a>
+            </div>
+            <div data-role="collapsible" data-collapsed="false">
+                <h3>
+                    Top Scorer
+                </h3>
+            </div>
+        </div>
+    </div>
+    <div data-theme="d" data-role="footer" data-position="fixed">
+        <a id="editor" data-role="button" data-theme="a" href="#page1" class="ui-btn-left" onclick="editor()">
+            Editor
+        </a>
+        <h3>
+        </h3>
+    </div>
+</div>
+</body>
+</html>
