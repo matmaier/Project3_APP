@@ -19,42 +19,42 @@
   <script type = "text/javascript">
  
   function editor(){
-    alert("Editor:\nMatthias Maier\nFall Semester 2013\nIUPUI");
-  } 
+    alert("Matthias Maier\nFall Semester 2013\nIUPUI");
+  }
      
   </script>
 </head>
 
 <body>
-<div data-role="page" data-theme="b" id="page1">
+<div data-role="page" id="page2">
     <div data-theme="a" data-role="header">
-        <a data-role="button" href="#page1" data-icon="arrow-l" data-iconpos="left"
+        <a data-role="button" href="http://cs.iupui.edu/~matmaier/project3/" data-icon="arrow-l" data-iconpos="left"
         class="ui-btn-left">
+            Back
+        </a>
+        <h1>
+            1. Bundesliga
+        </h1>
+        <a data-role="button" href="http://cs.iupui.edu/~matmaier/project3/"  
+        class="ui-btn-right">
             Home
         </a>
-        <h3>
-            1. Bundesliga
-        </h3>
     </div>
     <div data-role="content">
-        <div data-role="collapsible-set">
-            <div data-role="collapsible">
+        <div data-role="collapsible-set" data-theme="b">
+            <div  data-role="collapsible" data-collapsed="false">
                 <h3>
                     Teams
                 </h3>
-                <ul data-role="listview" data-divider-theme="b" data-inset="true">
-                    <li data-theme="c">
-                        <a href="#" data-transition="slide">
-                            Button
-                        </a>
-                    </li>
-                </ul>
+                <a data-role="button" href="http://cs.iupui.edu/~matmaier/project3/Teams.html">
+                    All Teams 2013/2014
+                </a>
             </div>
             <div data-role="collapsible">
                 <h3>
                     Current Table
                 </h3>
-                <a data-role="button" href="#page1">
+                <a data-role="button" href="http://www.bundesliga.de/de/liga/tabelle/">
                     Official Homepage
                 </a>
             </div>
@@ -62,11 +62,14 @@
                 <h3>
                     Top Scorer
                 </h3>
+                <a data-role="button" href="http://cs.iupui.edu/~matmaier/project3/TopScorer.html">
+                    Season 12/13 & 13/14
+                </a>
             </div>
         </div>
     </div>
     <div data-theme="d" data-role="footer" data-position="fixed">
-        <a id="editor" data-role="button" data-theme="a" href="#page1" class="ui-btn-left" onclick="editor()">
+        <a id="editor" data-role="button" data-theme="a" class="ui-btn-left" onclick="editor()">
             Editor
         </a>
         <h3>

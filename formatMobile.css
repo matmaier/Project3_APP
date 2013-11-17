@@ -6,7 +6,40 @@
     width:100%;
     height:100%;
     float:left;
-    padding-left:10px;
     text-align:center;
 }
+#team {
     
+    font-size:125%;
+    background-color:white;  
+    display: block;
+    width:100%;
+    height:100%;
+    float:left;
+    text-align:center;
+}
+
+#tableheader {
+    text-align:center;
+    color:blue;
+}
+#tablecontent {
+    color:black;
+    font-size:small;
+    text-align:center;
+}
+
+.ui-block-a {
+    border-right:solid;
+    border-top:solid;
+}
+.ui-block-b {
+    border-top:solid;
+}
+.ui-block-c {
+    border-left:solid;
+    border-top:solid;
+}
+#tab {
+    border:none;
+}
