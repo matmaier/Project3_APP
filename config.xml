@@ -79,10 +79,10 @@
 
 
   <!-- Define app splash screen for each platform. -->
-  <gap:splash src="http://cs.iupui.edu/~matmaier/project3/splash_screen.png"  gap:platform="android" gap:density="ldpi" />
-  <gap:splash src="http://cs.iupui.edu/~matmaier/project3/splash_screen.png"  gap:platform="android" gap:density="mdpi" />
-  <gap:splash src="http://cs.iupui.edu/~matmaier/project3/splash_screen.png"  gap:platform="android" gap:density="hdpi" />
-  <gap:splash src="http://cs.iupui.edu/~matmaier/project3/splash_screen.png" gap:platform="android" gap:density="xhdpi" />
+  <gap:splash src="splash_screen.png"  gap:platform="android" gap:density="ldpi" />
+  <gap:splash src="splash_screen.png"  gap:platform="android" gap:density="mdpi" />
+  <gap:splash src="splash_screen.png"  gap:platform="android" gap:density="hdpi" />
+  <gap:splash src="splash_screen.png" gap:platform="android" gap:density="xhdpi" />
  
 
   <!--
