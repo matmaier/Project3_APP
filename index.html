@@ -17,15 +17,29 @@
   <script src="jquery.mobile.js"></script>
 
   <script type = "text/javascript">
+      function init() {
+          name = localStorage.getItem("name");
+          if (name == "null" || name == null) {
+              name = prompt("What is your name?");
+              localStorage.setItem("name", name);
+          } else {
+              alert("Hi, " + name + "!\nWelcome to my first App!");
+          }
+      }
+      function visitor() {
+          name = prompt("What is your name?");
+          localStorage.setItem("name", name);
+          alert("Hi, " + name + "!\nWelcome to my first App!");
+      }
  
-  function editor(){
-      alert("Matthias Maier\nFall Semester 2013\nIUPUI\nmatmaier@iupui.edu");
-  } 
+      function editor(){
+          alert("Matthias Maier\nFall Semester 2013\nIUPUI\nmatmaier@iupui.edu");
+      } 
      
   </script>
    
 </head>
-<body>
+<body onload="init()">
 
 <div data-role="page" id="page1">
     <div data-theme="a" data-role="header" data-position="fixed">
@@ -71,6 +85,9 @@
         </a>
         <h3>
         </h3>
+        <a id="visitor" data-role="button" data-theme="a" href="#page1" class="ui-btn-right" data-iconpos="right" onclick="visitor()">
+            Change my name
+        </a>
     </div>
 </div>
 </body>
