@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <title>Project 3</title>
+  
+  
+  <link rel="stylesheet" href="https://d10ajoocuyu32n.cloudfront.net/mobile/1.3.1/jquery.mobile-1.3.1.min.css">
+  <link rel = "stylesheet"
+              type = "text/css"
+              href = "formatMobile.css"/>
+  
+  <script src="jquery.js"></script>
+  <script src="jquery.mobile.js"></script>
+   
+  <script type = "text/javascript">
+ 
+  function editor(){
+    alert("Matthias Maier\nFall Semester 2013\nIUPUI");
+  }
+     
+  </script>
+</head>
+
+<body>
+<div data-role="page" id="page5">
+    <div data-theme="a" data-role="header">
+        <a data-role="button" href="http://cs.iupui.edu/~matmaier/project3/" data-icon="arrow-l" data-iconpos="left"
+        class="ui-btn-left">
+            Back
+        </a>
+        <h1>
+            Eiskalter Stuermer
+        </h1>
+        <a data-role="button" href="http://cs.iupui.edu/~matmaier/project3/"  
+        class="ui-btn-right">
+            Home
+        </a>
+    </div>
+    <div data-role="content">
+        <a href="#page5">
+            <div style="display:block; margin-left:40%; width: 150px; height: 200px; position: relative; background-color: #fbfbfb; border: 1px solid #b8b8b8;">
+                <img id="team" src="alex.png" alt="image" >
+            </div>
+        </a>
+    </div>
+    <div data-theme="d" data-role="footer" data-position="fixed">
+        <a id="editor" data-role="button" data-theme="a" class="ui-btn-left" onclick="editor()">
+            Editor
+        </a>
+        <h3>
+        </h3>
+    </div>
+</div>
+</body>
+</html>
